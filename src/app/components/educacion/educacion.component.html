@@ -1,0 +1,45 @@
+<div class="section">
+    <div class="row">
+        <h1 id="title">Educación</h1>
+
+        <div class="col-md-10"></div>
+        <div class="col-md-2 mb-3" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaedu"><i class="bi bi-plus-lg"> Nueva</i></button>
+        </div>
+
+    </div>
+    
+    <ul class="items-list">
+        <li *ngFor="let edu of educacion">
+            <div class="card mb-3 card_focus" style="max-width: 40rem; height: 100%">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="card mb-3 d-flex" style="max-width: 100%; height: 100%">
+                            <div class="card-body">
+                                <img class="logo-image" [src]="edu.image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{edu.school}}</h5>
+                            <h6 class="card-subtitle"><time>{{edu.start}}</time> - <time>{{edu.end}}</time></h6>
+                            <p class="card-text">
+                                {{edu.title}}
+                            </p>
+                            <div class="mb-3" *ngIf="isLogged">
+                                <button type="button" class="btn btn-dark btn-edit" routerLink="/editedu/{{edu.id}}">
+                                    <i class="bi bi-pencil-fill"> Editar</i>
+                                </button>
+    
+                                <button type="button" class="btn btn-danger btn-edit" (click)="borrar(edu.id)">
+                                    <i class="bi bi-trash"> Borrar</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

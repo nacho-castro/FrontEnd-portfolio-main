@@ -1,0 +1,53 @@
+{
+    "name": "Ignacio Castro",
+    "profile": "./assets/images/perfil.png",
+    "position": "Full Stack Developer Jr",
+    "ubication": "Buenos Aires, Argentina",
+    "about": "Hola! Soy Nacho, estudiante de Ingeniería en Sistemas en la Universidad Tecnológica Nacional. Soy una persona organizada y responsable, con buenas relaciones interpersonales. Amante de la tecnología y la programación. Estoy comenzando en el sector IT y busco un puesto desafiante donde pueda continuar aprendiendo. En este Portfolio podrás ver mis proyectos y certificados, además de tener la posibilidad de contactarte conmigo.",
+    "experiencie": [
+        {
+            "title": "FRONT-END",
+            "description": "Desarrollo de sitios web interactivos. Utilizo tecnologías como HTML, CSS, JavaScript, Angular Framework y Bootstrap",
+            "image": "./assets/images/pcicon.png"
+        },
+        {
+            "title": "BACK-END",
+            "description": "Desarrollo de sitios seguros y funcionales. Utilizo Java, Spring Framework, H2 database y MySQL",
+            "image": "./assets/images/bdicon.png"
+        }
+    ],
+    "education": [
+        {
+            "school": "UTN",
+            "title": "Ingenieria en Sistemas de Información",
+            "image": "./assets/images/utn.jpg",
+            "start": "2023",
+            "end": "Actualidad"
+        },
+        {
+            "school": "Nacional de San Isidro",
+            "title": "Bachiller orientado en Cs. Sociales",
+            "image": "./assets/images/colegionacional.jpg",
+            "start": "2017",
+            "end": "2022"
+        }
+    ],
+    "skills": [
+        {
+            "title": "HTML",
+            "per": "25%"
+        },
+        {
+            "title": "CSS",
+            "per": "25%"
+        },
+        {
+            "title": "JavaScript",
+            "per": "25%"
+        },
+        {
+            "title": "JAVA",
+            "per": "50%"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+<div class="section" id="about">
+    <div class=row>
+        <div class="col-md-2"></div>
+
+        <div class="col-md-2">
+            <img [src]="perfil.profile" alt="perfil-logo" id="perfil-logo">
+        </div>
+
+        <div class="col-md-6">
+                <h1>{{perfil.name}}</h1>
+            <p><span>{{perfil.position}}</span></p>
+            <p>📍{{perfil.ubication}}</p>
+            <button type="button" class="btn btn-primary"><a href="mailto:ignaciocastroplanas@gmail.com" id="contacto">Contacto</a></button>
+            <a href="https://drive.google.com/file/d/15ae8ehCIjlVZ0D4e5Rhg7eW7Z0PgLL-X/view?usp=share_link"
+                target="_blank" class="btn btn-info" role="button">Ver CV</a>
+    
+        </div>
+
+        <div class="col-md-2 mb-3" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark" routerLink="/editar-perfil/{{perfil.id}}"><i
+                    class="bi bi-pencil-fill"> Editar</i></button>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8" style="padding-top: 2em;">
+            <h2>Sobre mí</h2>
+            <p style="text-align: justify;">{{perfil.about}}</p>
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+</div>

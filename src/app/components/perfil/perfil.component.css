@@ -1,0 +1,18 @@
+#perfil-logo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.btn-primary {
+    margin-right: 10px;
+}
+
+span {
+    font-weight: 700;
+}
+
+a:link, a:visited, a:active {
+    color: #ecf2ef;
+    text-decoration:none;
+}
